@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Allowance_ByAllowance_DataSet" targetNamespace="http://tempuri.org/Allowance_ByAllowance_DataSet.xsd" xmlns:mstns="http://tempuri.org/Allowance_ByAllowance_DataSet.xsd" xmlns="http://tempuri.org/Allowance_ByAllowance_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Allowance_ByAllowance_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Allowance_ByAllowance_DataSet" msprop:Generator_DataSetName="Allowance_ByAllowance_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtAllowanceByAllowance" msprop:Generator_UserTableName="dtAllowanceByAllowance" msprop:Generator_RowDeletedName="dtAllowanceByAllowanceRowDeleted" msprop:Generator_TableClassName="dtAllowanceByAllowanceDataTable" msprop:Generator_RowChangedName="dtAllowanceByAllowanceRowChanged" msprop:Generator_RowClassName="dtAllowanceByAllowanceRow" msprop:Generator_RowChangingName="dtAllowanceByAllowanceRowChanging" msprop:Generator_RowEvArgName="dtAllowanceByAllowanceRowChangeEvent" msprop:Generator_RowEvHandlerName="dtAllowanceByAllowanceRowChangeEventHandler" msprop:Generator_TablePropName="dtAllowanceByAllowance" msprop:Generator_TableVarName="tabledtAllowanceByAllowance" msprop:Generator_RowDeletingName="dtAllowanceByAllowanceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpId" msprop:Generator_UserColumnName="EmpId" msprop:Generator_ColumnPropNameInRow="EmpId" msprop:Generator_ColumnVarNameInTable="columnEmpId" msprop:Generator_ColumnPropNameInTable="EmpIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_UserColumnName="EmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInTable="MonthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_UserColumnName="Year" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInTable="YearColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AllowanceId" msprop:Generator_UserColumnName="AllowanceId" msprop:Generator_ColumnPropNameInRow="AllowanceId" msprop:Generator_ColumnVarNameInTable="columnAllowanceId" msprop:Generator_ColumnPropNameInTable="AllowanceIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Allowance" msprop:Generator_UserColumnName="Allowance" msprop:Generator_ColumnPropNameInRow="Allowance" msprop:Generator_ColumnVarNameInTable="columnAllowance" msprop:Generator_ColumnPropNameInTable="AllowanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ActAmount" msprop:Generator_UserColumnName="ActAmount" msprop:Generator_ColumnPropNameInRow="ActAmount" msprop:Generator_ColumnVarNameInTable="columnActAmount" msprop:Generator_ColumnPropNameInTable="ActAmountColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GivenAmount" msprop:Generator_UserColumnName="GivenAmount" msprop:Generator_ColumnPropNameInRow="GivenAmount" msprop:Generator_ColumnVarNameInTable="columnGivenAmount" msprop:Generator_ColumnPropNameInTable="GivenAmountColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

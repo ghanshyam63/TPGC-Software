@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmployeePenaltyDataset" targetNamespace="http://tempuri.org/EmployeePenaltyDataset.xsd" xmlns:mstns="http://tempuri.org/EmployeePenaltyDataset.xsd" xmlns="http://tempuri.org/EmployeePenaltyDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmployeePenaltyDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EmployeePenaltyDataset" msprop:Generator_DataSetName="EmployeePenaltyDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EmpPenalty" msprop:Generator_UserTableName="EmpPenalty" msprop:Generator_RowDeletedName="EmpPenaltyRowDeleted" msprop:Generator_TableClassName="EmpPenaltyDataTable" msprop:Generator_RowChangedName="EmpPenaltyRowChanged" msprop:Generator_RowClassName="EmpPenaltyRow" msprop:Generator_RowChangingName="EmpPenaltyRowChanging" msprop:Generator_RowEvArgName="EmpPenaltyRowChangeEvent" msprop:Generator_RowEvHandlerName="EmpPenaltyRowChangeEventHandler" msprop:Generator_TablePropName="EmpPenalty" msprop:Generator_TableVarName="tableEmpPenalty" msprop:Generator_RowDeletingName="EmpPenaltyRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpId" msprop:Generator_UserColumnName="EmpId" msprop:Generator_ColumnPropNameInRow="EmpId" msprop:Generator_ColumnVarNameInTable="columnEmpId" msprop:Generator_ColumnPropNameInTable="EmpIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_UserColumnName="EmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Penalty_Name" msprop:Generator_UserColumnName="Penalty_Name" msprop:Generator_ColumnPropNameInRow="Penalty_Name" msprop:Generator_ColumnVarNameInTable="columnPenalty_Name" msprop:Generator_ColumnPropNameInTable="Penalty_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Penalty_Value" msprop:Generator_UserColumnName="Penalty_Value" msprop:Generator_ColumnPropNameInRow="Penalty_Value" msprop:Generator_ColumnVarNameInTable="columnPenalty_Value" msprop:Generator_ColumnPropNameInTable="Penalty_ValueColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Penalty_Date" msprop:Generator_UserColumnName="Penalty_Date" msprop:Generator_ColumnPropNameInRow="Penalty_Date" msprop:Generator_ColumnVarNameInTable="columnPenalty_Date" msprop:Generator_ColumnPropNameInTable="Penalty_DateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInTable="MonthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_UserColumnName="Year" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInTable="YearColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+D:\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\obj\Debug\ResolveAssemblyReference.cache
+D:\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\obj\Debug\Allowance_Report.resources
+D:\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\obj\Debug\XtraReport1.resources
+D:\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.csproj.GenerateResource.Cache
+D:\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.dll.licenses
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\ResolveAssemblyReference.cache
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Allowance_Report.resources
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\XtraReport1.resources
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.csproj.GenerateResource.Cache
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.dll.licenses
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\ResolveAssemblyReference.cache
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Allowance_Report.resources
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\XtraReport1.resources
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.csproj.GenerateResource.Cache
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.dll.licenses
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\ResolveAssemblyReference.cache
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Allowance_Report.resources
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\XtraReport1.resources
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.csproj.GenerateResource.Cache
+D:\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\TPGC SOFTWARE\Pegasus ERP Solution\obj\Debug\Pegasus ERP Solution.dll.licenses

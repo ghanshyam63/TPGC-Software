@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ERPMaster.master.cs" Inherits="ERPMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="SHORTCUT ICON" href="Images/favicon.ico" />
+    <link href="CSS/InvStyle.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 1490px;
+        }
+        .style2
+        {
+            height: 440px;
+            width: 1490px;
+        }
+    </style>
+</head>
+<body style="margin-top: 0px" bgcolor="white" id="body1" runat="server">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="SM1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdatePanel ID="upnlAcc" runat="server">
+        <ContentTemplate>
+            <center>
+                <div style="background-color: #FFFFFF; width: 95%; height: 600px">
+                    <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style="height: 600px;
+                        border-right: lightgrey 1px solid; border-top: lightgrey 1px solid; border-left: lightgrey 1px solid;
+                        border-bottom: lightgrey 1px solid">
+                        <tbody>
+                            <tr>
+                                <td valign="top" style="background-color: #c2c2c2" class="style1">
+                                    <asp:Literal ID="LitImage" runat="server"></asp:Literal>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                            </tr>
+                            <tr style="height: 25px">
+                                <td align="left" class="style1">
+                                    <table width="100%" class="menubrg">
+                                        <tr>
+                                            <td align="left">
+                                                College</td>
+                                            <td width="1%">
+                                                :
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="lblCompany1" Font-Size="12px" runat="server" Font-Bold="true" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="lblBrand" runat="server" Text="<%$ Resources:Attendance,Brand %>"
+                                                    Font-Size="12px " Font-Bold="False" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td width="1%">
+                                                :
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="lblBrand1" Font-Size="12px" runat="server" Font-Bold="true" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="lblLocation" runat="server" Text="<%$ Resources:Attendance,Location %>"
+                                                    Font-Size="12px " Font-Bold="False" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td width="1%">
+                                                :
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="lblLocation1" Font-Size="12px" runat="server" Font-Bold="true" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="Label1" runat="server" Text="<%$ Resources:Attendance,Language %>"
+                                                    Font-Size="12px " Font-Bold="False" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td width="1%">
+                                                :
+                                            </td>
+                                            <td align="left">
+                                                <asp:Label ID="lblLanguage" Font-Size="12px" runat="server" Font-Bold="true" Font-Names="Verdana"></asp:Label>
+                                            </td>
+                                            <td align="right">
+                                                <asp:Label Font-Size="12px" runat="server" Font-Bold="true" Font-Names="Verdana"
+                                                    ID="lblWelcome" Text="Welcome" />,
+                                            </td>
+                                            <td align="right">
+                                                <asp:LinkButton ID="lnkUserName" runat="server" Font-Bold="false" Font-Size="12px"
+                                                    Font-Names="Verdana" Text="Admin" CausesValidation="False" />
+                                            </td>
+                                            <td align="right">
+                                                <asp:ImageButton runat="server" Width="20px" Height="20px" ID="imgbtnBLD" ImageUrl="~/Images/change-company.png"
+                                                    OnClick="Bld_onClick" />
+                                            </td>
+                                            <td align="right">
+                                                <asp:ImageButton ID="btnlogout" runat="server" ImageUrl="~/Images/logout.png" CausesValidation="False"
+                                                    ToolTip="LogOut" OnClick="btnlogout_Click" />
+                                            </td>
+                                            <td align="right">
+                                                <asp:HyperLink ID="HypHome" runat="server" ImageUrl="~/Images/Icon-buttons-home.png"
+                                                    Height="22px" Width="26px" ToolTip="Pegasus:Home" 
+                                                    NavigateUrl="~/Home.aspx" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="style2">
+                                    <table width="100%" bgcolor="#D3DEEF" cellpadding="0">
+                                        <tr>
+                                            <td width="250px" bgcolor="white" style="float: left;" valign="top">
+                                                <cc1:Accordion ID="acrDynamic" runat="server" SelectedIndex="0" CssClass="accordion"
+                                                    HeaderCssClass="accordionHeader" HeaderSelectedCssClass="accordionHeaderSelected"
+                                                    ContentCssClass="accordionContent">
+                                                </cc1:Accordion>
+                                            </td>
+                                            <td align="center" valign="top" width="100%" bgcolor="white">
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 50px">
+                                <td style="background-color: #1F3C57" class="style1">
+                                    <center style="color: #FFFFFF">
+                                        <asp:Label ID="lbl1" runat="server" Font-Names="Arial" ForeColor="White" Font-Size="14px"
+                                            Text="<%$ Resources:Attendance,Copyright %>" />
+                                        <asp:Label ID="lbl2" runat="server" Font-Names="Arial" ForeColor="White" Font-Size="14px"
+                                            Text=" © 2013,"></asp:Label>
+                                        Tilak P.G College<asp:Label ID="Label5" runat="server" Font-Names="Arial" ForeColor="White" Font-Size="14px"
+                                            Text="," />
+                                        <asp:Label ID="Label3" runat="server" Font-Names="Arial" ForeColor="White" Font-Size="14px"
+                                            Text="<%$ Resources:Attendance,All Rights Reserved. %>" />
+                                        <br />
+                                        <asp:Label ID="label4" runat="server" Font-Names="Arial" ForeColor="White" Font-Size="14px" />
+                                        <br />
+                                        <asp:Label ID="lblModifyDate" runat="server" Font-Names="Arial" ForeColor="White"
+                                            Font-Size="14px" />
+                                    </center>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </center>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    </form>
+</body>
+</html>

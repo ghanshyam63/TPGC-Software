@@ -1,0 +1,23 @@
+﻿#Background 
+{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background-color:WHITE;
+    filter:alpha(opacity=60);
+    opacity:0.6;
+}
+
+#Progress 
+{
+    position:absolute;
+    top:40%;
+    bottom :25%;
+    right:25%;
+    left : 40%;
+    width:200px;
+    height:50px;
+
+        } 

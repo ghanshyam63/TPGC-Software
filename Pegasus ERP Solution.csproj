@@ -1,0 +1,1935 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8E008E0-E990-46B8-967F-5ED3E6BEB238}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pegasus_ERP_Solution</RootNamespace>
+    <AssemblyName>Pegasus ERP Solution</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Tilak\AppData\Local\Microsoft\VisualStudio\9.0\ProjectAssemblies\m8qyptgq01\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\ArcaWing\Arc_Directory_Master.cs" />
+    <Content Include="App_Code\ArcaWing\Arc_DocumentMaster.cs" />
+    <Content Include="App_Code\ArcaWing\Arc_FileTransaction.cs" />
+    <Content Include="App_Code\ArcaWing\Arc_FileType.cs" />
+    <Content Include="App_Code\Attendance\Att_AttendanceLog.cs" />
+    <Content Include="App_Code\Attendance\Att_AttendanceRegister.cs" />
+    <Content Include="App_Code\Attendance\Att_Employee_Leave.cs" />
+    <Content Include="App_Code\Attendance\Att_Employee_Notification.cs" />
+    <Content Include="App_Code\Attendance\Att_Leave_Request.cs" />
+    <Content Include="App_Code\Attendance\Att_PartialLeave_Request.cs" />
+    <Content Include="App_Code\Attendance\Att_ScheduleMaster.cs" />
+    <Content Include="App_Code\Attendance\Att_ShiftDescription.cs" />
+    <Content Include="App_Code\Attendance\Att_ShiftManagement.cs" />
+    <Content Include="App_Code\Attendance\Att_TimeTable.cs" />
+    <Content Include="App_Code\Attendance_Report\AttendanceDataSet.Designer.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_AbsentReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_AttendanceSalaryReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_DailySalaryReport1.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_EarlyOutReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_EmployeeReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_ExceptionReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_HolidayReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_InOutReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_LateReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_LeaveRemainingReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_LeaveReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_LeaveStatusReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_LogReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_OverTimeReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_PartialLeaveReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_PartialViolationReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_ShiftReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_SummaryReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\Att_WeekOffReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\MailTransactionReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\SMSTransactionReport.cs" />
+    <Content Include="App_Code\Attendance_Report\RepxReport\UserTransferReport.cs" />
+    <Content Include="App_Code\BasePage.cs" />
+    <Content Include="App_Code\Common.cs" />
+    <Content Include="App_Code\Device\Att_DeviceMaster.cs" />
+    <Content Include="App_Code\Device\Att_Device_Parameter.cs" />
+    <Content Include="App_Code\Device\DeviceOperation.cs" />
+    <Content Include="App_Code\EMS\Ems_ContactMaster.cs" />
+    <Content Include="App_Code\EMS\Ems_Contact_Group.cs" />
+    <Content Include="App_Code\EMS\Ems_GroupMaster.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_Attendance.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_claim.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_Deduction.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_Due_Payment.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_Loan.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_Month.cs" />
+    <Content Include="App_Code\HR\Pay_Employee_Penalty.cs" />
+    <Content Include="App_Code\HR\Pay_Employe_Allowance.cs" />
+    <Content Include="App_Code\HR\Set_Allowance.cs" />
+    <Content Include="App_Code\HR\Set_Deduction.cs" />
+    <Content Include="App_Code\HR\Set_Pay_Employee_Allow_Deduc.cs" />
+    <Content Include="App_Code\HR_Report\Allowance_ByAllowance_DataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\Allowance_Report.cs" />
+    <Content Include="App_Code\HR_Report\DeductionByDeduction.cs" />
+    <Content Include="App_Code\HR_Report\Deduction_By_DeductionDataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\Deduction_Report.cs" />
+    <Content Include="App_Code\HR_Report\DirectoryWiseReport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeClaimApproved.Designer.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeClaimreport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeDirectoryDataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeDirectoryReport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeLoanDataset.Designer.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeLoanDetailReport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeLoanInstallmentReport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeeLoanReport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeePaySlipDataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\EmployeePenaltyDataset.Designer.cs" />
+    <Content Include="App_Code\HR_Report\EmployeePenaltyReport.cs" />
+    <Content Include="App_Code\HR_Report\EmployeePFReport.cs" />
+    <Content Include="App_Code\HR_Report\Employee_Allowance_DataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\Employee_Attendance_Report.cs" />
+    <Content Include="App_Code\HR_Report\Employee_Deduction_DataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\Employee_Pay_Slip_Report.cs" />
+    <Content Include="App_Code\HR_Report\Employee_Total_Sal_Report.cs" />
+    <Content Include="App_Code\HR_Report\Employe_AllowanceByAllowance.cs" />
+    <Content Include="App_Code\HR_Report\Emp_DuePaymentDataset.Designer.cs" />
+    <Content Include="App_Code\HR_Report\EpmloyeePF_DataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\LoanDetailDataset.Designer.cs" />
+    <Content Include="App_Code\HR_Report\Pay_Employee_DuePayement.cs" />
+    <Content Include="App_Code\HR_Report\Settlement_Payment_DataSet.Designer.cs" />
+    <Content Include="App_Code\HR_Report\XtraReport1.cs" />
+    <Content Include="App_Code\Inventory\BillOfMaterial.cs" />
+    <Content Include="App_Code\Inventory\Inv_OptionCategoryMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_ProductBrandMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_ProductCategoryMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_ProductImage.cs" />
+    <Content Include="App_Code\Inventory\Inv_ProductLedger.cs" />
+    <Content Include="App_Code\Inventory\Inv_ProductMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_ProductSuppliers.cs" />
+    <Content Include="App_Code\Inventory\Inv_Product_Brand.cs" />
+    <Content Include="App_Code\Inventory\Inv_Product_Category.cs" />
+    <Content Include="App_Code\Inventory\Inv_Product_CompanyBrand.cs" />
+    <Content Include="App_Code\Inventory\Inv_Product_Location.cs" />
+    <Content Include="App_Code\Inventory\Inv_RackMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_ShipExpMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_StockBatchMaster.cs" />
+    <Content Include="App_Code\Inventory\Inv_StockDetail.cs" />
+    <Content Include="App_Code\Inventory\Inv_TransferDetail.cs" />
+    <Content Include="App_Code\Inventory\Inv_TransferHeader.cs" />
+    <Content Include="App_Code\Inventory\Inv_TransferRequestDetail.cs" />
+    <Content Include="App_Code\Inventory\Inv_TransferRequestHeader.cs" />
+    <Content Include="App_Code\Inventory\Inv_UnitMaster.cs" />
+    <Content Include="App_Code\Master\BrandMaster.cs" />
+    <Content Include="App_Code\Master\CompanyMaster.cs" />
+    <Content Include="App_Code\Master\DepartmentMaster.cs" />
+    <Content Include="App_Code\Master\DesignationMaster.cs" />
+    <Content Include="App_Code\Master\EmployeeInformation.cs" />
+    <Content Include="App_Code\Master\EmployeeParameter.cs" />
+    <Content Include="App_Code\Master\HolidayMaster.cs" />
+    <Content Include="App_Code\Master\LeaveMaster.cs" />
+    <Content Include="App_Code\Master\LocationMaster.cs" />
+    <Content Include="App_Code\Master\ModuleMaster.cs" />
+    <Content Include="App_Code\Master\NationalityMaster.cs" />
+    <Content Include="App_Code\Master\ObjectMaster.cs" />
+    <Content Include="App_Code\Master\QualificationMaster.cs" />
+    <Content Include="App_Code\Master\ReligionMaster.cs" />
+    <Content Include="App_Code\Master\RoleDataPermission.cs" />
+    <Content Include="App_Code\Master\RoleMaster.cs" />
+    <Content Include="App_Code\Master\RolePermission.cs" />
+    <Content Include="App_Code\Master\Set_AddressCategory.cs" />
+    <Content Include="App_Code\Master\Set_ApplicationParameter.cs" />
+    <Content Include="App_Code\Master\Set_BankMaster.cs" />
+    <Content Include="App_Code\Master\Set_Bank_Info.cs" />
+    <Content Include="App_Code\Master\Set_EmployeeGroupMaster.cs" />
+    <Content Include="App_Code\Master\Set_Employee_Holiday.cs" />
+    <Content Include="App_Code\Master\Set_Group_Employee.cs" />
+    <Content Include="App_Code\Master\Set_Holiday_Group.cs" />
+    <Content Include="App_Code\Master\Set_Payment_Mode_Master.cs" />
+    <Content Include="App_Code\Master\UserMaster.cs" />
+    <Content Include="App_Code\Master\UserPermission.cs" />
+    <Content Include="App_Code\ProjectManagement\Prj_ProjectMaster.cs" />
+    <Content Include="App_Code\ProjectManagement\Prj_ProjectTask.cs" />
+    <Content Include="App_Code\ProjectManagement\Prj_ProjectTeam.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseInquiryDetail.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseInquiryHeader.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseInquiry_Supplier.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseQuoteDetail.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseQuoteHeader.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseReturnDetail.cs" />
+    <Content Include="App_Code\Purchase\Inv_PurchaseReturnHeader.cs" />
+    <Content Include="App_Code\Purchase\Inv_ShipExpDetail.cs" />
+    <Content Include="App_Code\Purchase\Inv_ShipExpHeader.cs" />
+    <Content Include="App_Code\Purchase\PurchaseInvoice.cs" />
+    <Content Include="App_Code\Purchase\PurchaseInvoiceDetail.cs" />
+    <Content Include="App_Code\Purchase\PurchaseOrderDetail.cs" />
+    <Content Include="App_Code\Purchase\PurchaseOrderHeader.cs" />
+    <Content Include="App_Code\Purchase\PurchaseRequestDetail.cs" />
+    <Content Include="App_Code\Purchase\PurchaseRequestHeader.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesInquiryDetail.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesInquiryHeader.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesInvoiceDetail.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesInvoiceHeader.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesOrderDetail.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesOrderHeader.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesQuotationDetail.cs" />
+    <Content Include="App_Code\Sales\Inv_SalesQuotationHeader.cs" />
+    <Content Include="App_Code\Service\Ser_ReportEmployee.cs" />
+    <Content Include="App_Code\Service\Ser_ReportMaster.cs" />
+    <Content Include="App_Code\Service\Ser_ReportType.cs" />
+    <Content Include="App_Code\Service\Ser_UserTransfer.cs" />
+    <Content Include="App_Code\System\CountryMaster.cs" />
+    <Content Include="App_Code\System\CurrencyMaster.cs" />
+    <Content Include="App_Code\System\Set_AddressChild.cs" />
+    <Content Include="App_Code\System\Set_AddressMaster.cs" />
+    <Content Include="App_Code\System\Set_CustomerMaster.cs" />
+    <Content Include="App_Code\System\Set_DocNumber.cs" />
+    <Content Include="App_Code\System\Set_Suppliers.cs" />
+    <Content Include="App_Code\System\SystemParameter.cs" />
+    <Content Include="ArcaWing\DirectoryMaster.aspx" />
+    <Content Include="ArcaWing\DocumentMaster.aspx" />
+    <Content Include="ArcaWing\FileTransactionMaster.aspx" />
+    <Content Include="ArcaWing\FileTypeMaster.aspx" />
+    <Content Include="Attendance\LeaveApproval.aspx" />
+    <Content Include="Attendance\LeaveRequest.aspx" />
+    <Content Include="Attendance\LiveMonitoring.aspx" />
+    <Content Include="Attendance\LogProcess.aspx" />
+    <Content Include="Attendance\ManualAttendance.aspx" />
+    <Content Include="Attendance\PartialLeaveRequest.aspx" />
+    <Content Include="Attendance\ReportMailSetup.aspx" />
+    <Content Include="Attendance\ShiftAssignToEmp.aspx" />
+    <Content Include="Attendance\ShiftManagement.aspx" />
+    <Content Include="Attendance\TemporaryShift.aspx" />
+    <Content Include="Attendance\TimeTable.aspx" />
+    <Content Include="Attendance_Report\AbsentReport.aspx" />
+    <Content Include="Attendance_Report\AttendanceRegister.aspx" />
+    <Content Include="Attendance_Report\AttendanceReport.aspx" />
+    <Content Include="Attendance_Report\AttendanceSalaryReport.aspx" />
+    <Content Include="Attendance_Report\DailySalaryReport.aspx" />
+    <Content Include="Attendance_Report\EarlyOutReport.aspx" />
+    <Content Include="Attendance_Report\EmployeeReport.aspx" />
+    <Content Include="Attendance_Report\HolidayReport.aspx" />
+    <Content Include="Attendance_Report\InOutExceptionReport.aspx" />
+    <Content Include="Attendance_Report\InOutReport.aspx" />
+    <Content Include="Attendance_Report\LateReport.aspx" />
+    <Content Include="Attendance_Report\LeaveRemainingReport.aspx" />
+    <Content Include="Attendance_Report\LeaveReport.aspx" />
+    <Content Include="Attendance_Report\LeaveStatusReport.aspx" />
+    <Content Include="Attendance_Report\LogReport.aspx" />
+    <Content Include="Attendance_Report\MailTransactionReport.aspx" />
+    <Content Include="Attendance_Report\OverTimeReport.aspx" />
+    <Content Include="Attendance_Report\PartialLeaveReport.aspx" />
+    <Content Include="Attendance_Report\PartialViolaionReport.aspx" />
+    <Content Include="Attendance_Report\ShiftReport.aspx" />
+    <Content Include="Attendance_Report\SMSTransactionReport.aspx" />
+    <Content Include="Attendance_Report\SummaryReport.aspx" />
+    <Content Include="Attendance_Report\UserTransferReport.aspx" />
+    <Content Include="Attendance_Report\WeekoffReport.aspx" />
+    <Content Include="App_Code\Master\CertificateMaster.cs" />
+    <Content Include="App_Code\Master\VillageMaster.cs" />
+    <Content Include="App_Code\Master\UnivercityMaster.cs" />
+    <Content Include="App_Code\Master\ExaminationMaster.cs" />
+    <Content Include="App_Code\Master\StateMaster.cs" />
+    <Content Include="App_Code\Master\CityMaster.cs" />
+    <Content Include="App_Code\Master\StudentTypeMaster.cs" />
+    <Content Include="App_Code\Master\PostMaster.cs" />
+    <Content Include="App_Code\Master\ConcessionMaster.cs" />
+    <Compile Include="Academic\AcademicFormsMasters.aspx.cs">
+      <DependentUpon>AcademicFormsMasters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\AcademicMaster.aspx.cs">
+      <DependentUpon>AcademicMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\AcademicReportsMaster.aspx.cs">
+      <DependentUpon>AcademicReportsMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\AdmissionMaster.aspx.cs">
+      <DependentUpon>AdmissionMaster.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Master\EmployeeMaster.cs" />
+    <Content Include="App_Code\EMS\Ems_CompanyContactMaster.cs" />
+    <Content Include="App_Code\Master\GrampacyatMaster.cs" />
+    <Content Include="App_Code\Master\DistrictMaster.cs" />
+    <Compile Include="Academic\ClassMaster.aspx.cs">
+      <DependentUpon>ClassMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\CourseMaster.aspx.cs">
+      <DependentUpon>CourseMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\FeesHeadMaster.aspx.cs">
+      <DependentUpon>FeesHeadMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Masters.aspx.cs">
+      <DependentUpon>Masters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\StudentEnquiry.aspx.cs">
+      <DependentUpon>StudentEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Master\ClassMaster.cs" />
+    <Content Include="App_Code\Master\CourseMaster.cs" />
+    <Compile Include="App_GlobalResources\Allowance_Report.designer.cs" />
+    <Compile Include="App_GlobalResources\Allowance_Report1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Allowance_Report.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ArabicMessage.designer.cs" />
+    <Compile Include="App_GlobalResources\ArabicMessage1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArabicMessage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Attendance.ar-SA.designer.cs" />
+    <Compile Include="App_GlobalResources\Attendance.ar-SA1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendance.ar-SA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Attendance.designer.cs" />
+    <Compile Include="App_GlobalResources\Attendance.en-US.designer.cs" />
+    <Compile Include="App_GlobalResources\Attendance.en-US1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendance.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Attendance1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendance.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_AbsentReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_AbsentReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_AbsentReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_AttendanceSalaryReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_AttendanceSalaryReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_AttendanceSalaryReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_DailySalaryReport1.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_DailySalaryReport11.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_DailySalaryReport1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_EarlyOutReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_EarlyOutReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_EarlyOutReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_EmployeeReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_EmployeeReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_EmployeeReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_ExceptionReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_ExceptionReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_ExceptionReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_HolidayReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_HolidayReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_HolidayReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_InOutReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_InOutReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_InOutReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_LateReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_LateReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_LateReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_LeaveRemainingReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_LeaveRemainingReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_LeaveRemainingReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_LeaveReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_LeaveReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_LeaveReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_LeaveStatusReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_LeaveStatusReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_LeaveStatusReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_LogReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_LogReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_LogReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_OverTimeReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_OverTimeReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_OverTimeReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_PartialLeaveReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_PartialLeaveReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_PartialLeaveReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_PartialViolationReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_PartialViolationReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_PartialViolationReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_ShiftReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_ShiftReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_ShiftReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_SummaryReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_SummaryReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_SummaryReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Att_WeekOffReport.designer.cs" />
+    <Compile Include="App_GlobalResources\Att_WeekOffReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Att_WeekOffReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DeductionByDeduction.designer.cs" />
+    <Compile Include="App_GlobalResources\DeductionByDeduction1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionByDeduction.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Deduction_Report.designer.cs" />
+    <Compile Include="App_GlobalResources\Deduction_Report1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Deduction_Report.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DirectoryWiseReport.designer.cs" />
+    <Compile Include="App_GlobalResources\DirectoryWiseReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DirectoryWiseReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DocumentReport.designer.cs" />
+    <Compile Include="App_GlobalResources\DocumentReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeeClaimreport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeeClaimreport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeClaimreport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeeDirectoryReport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeeDirectoryReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDirectoryReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeeLoanDetailReport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeeLoanDetailReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeLoanDetailReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeeLoanInstallmentReport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeeLoanInstallmentReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeLoanInstallmentReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeeLoanReport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeeLoanReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeLoanReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeePenaltyReport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeePenaltyReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeePenaltyReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmployeePFReport.designer.cs" />
+    <Compile Include="App_GlobalResources\EmployeePFReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeePFReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Employee_Attendance_Report.designer.cs" />
+    <Compile Include="App_GlobalResources\Employee_Attendance_Report1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_Attendance_Report.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Employee_Pay_Slip_Report.designer.cs" />
+    <Compile Include="App_GlobalResources\Employee_Pay_Slip_Report1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_Pay_Slip_Report.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Employee_Total_Sal_Report.designer.cs" />
+    <Compile Include="App_GlobalResources\Employee_Total_Sal_Report1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_Total_Sal_Report.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Employe_AllowanceByAllowance.designer.cs" />
+    <Compile Include="App_GlobalResources\Employe_AllowanceByAllowance1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employe_AllowanceByAllowance.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\MailTransactionReport.designer.cs" />
+    <Compile Include="App_GlobalResources\MailTransactionReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailTransactionReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Pay_Employee_DuePayement.designer.cs" />
+    <Compile Include="App_GlobalResources\Pay_Employee_DuePayement1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pay_Employee_DuePayement.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserTransferReport.designer.cs" />
+    <Compile Include="App_GlobalResources\UserTransferReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserTransferReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\XtraReport1.designer.cs" />
+    <Compile Include="App_GlobalResources\XtraReport11.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XtraReport1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ArcaWing\DirectoryMaster.aspx.cs">
+      <DependentUpon>DirectoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArcaWing\DocumentMaster.aspx.cs">
+      <DependentUpon>DocumentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArcaWing\FileTransactionMaster.aspx.cs">
+      <DependentUpon>FileTransactionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArcaWing\FileTypeMaster.aspx.cs">
+      <DependentUpon>FileTypeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\LeaveApproval.aspx.cs">
+      <DependentUpon>LeaveApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\LeaveRequest.aspx.cs">
+      <DependentUpon>LeaveRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\LiveMonitoring.aspx.cs">
+      <DependentUpon>LiveMonitoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\LogProcess.aspx.cs">
+      <DependentUpon>LogProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\ManualAttendance.aspx.cs">
+      <DependentUpon>ManualAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\PartialLeaveRequest.aspx.cs">
+      <DependentUpon>PartialLeaveRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\ReportMailSetup.aspx.cs">
+      <DependentUpon>ReportMailSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\ShiftAssignToEmp.aspx.cs">
+      <DependentUpon>ShiftAssignToEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\ShiftManagement.aspx.cs">
+      <DependentUpon>ShiftManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\TemporaryShift.aspx.cs">
+      <DependentUpon>TemporaryShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\TimeTable.aspx.cs">
+      <DependentUpon>TimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Report\AbsentReport.aspx.cs">
+      <DependentUpon>AbsentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\AttendanceRegister.aspx.cs">
+      <DependentUpon>AttendanceRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Report\AttendanceReport.aspx.cs">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Report\AttendanceSalaryReport.aspx.cs">
+      <DependentUpon>AttendanceSalaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Report\DailySalaryReport.aspx.cs">
+      <DependentUpon>DailySalaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\EarlyOutReport.aspx.cs">
+      <DependentUpon>EarlyOutReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\EmployeeReport.aspx.cs">
+      <DependentUpon>EmployeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\HolidayReport.aspx.cs">
+      <DependentUpon>HolidayReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\InOutExceptionReport.aspx.cs">
+      <DependentUpon>InOutExceptionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\InOutReport.aspx.cs">
+      <DependentUpon>InOutReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\LateReport.aspx.cs">
+      <DependentUpon>LateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\LeaveRemainingReport.aspx.cs">
+      <DependentUpon>LeaveRemainingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\LeaveReport.aspx.cs">
+      <DependentUpon>LeaveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\LeaveStatusReport.aspx.cs">
+      <DependentUpon>LeaveStatusReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\LogReport.aspx.cs">
+      <DependentUpon>LogReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\MailTransactionReport.aspx.cs">
+      <DependentUpon>MailTransactionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\OverTimeReport.aspx.cs">
+      <DependentUpon>OverTimeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\PartialLeaveReport.aspx.cs">
+      <DependentUpon>PartialLeaveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\PartialViolaionReport.aspx.cs">
+      <DependentUpon>PartialViolaionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\ShiftReport.aspx.cs">
+      <DependentUpon>ShiftReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\SMSTransactionReport.aspx.cs">
+      <DependentUpon>SMSTransactionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\SummaryReport.aspx.cs">
+      <DependentUpon>SummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Report\UserTransferReport.aspx.cs">
+      <DependentUpon>UserTransferReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report\WeekoffReport.aspx.cs">
+      <DependentUpon>WeekoffReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Device\DeleteUser.aspx.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DeviceMaster.aspx.cs">
+      <DependentUpon>DeviceMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DeviceOperation.aspx.cs">
+      <DependentUpon>DeviceOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DeviceParameter.aspx.cs">
+      <DependentUpon>DeviceParameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DownloadLog.aspx.cs">
+      <DependentUpon>DownloadLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DownloadUser.aspx.cs">
+      <DependentUpon>DownloadUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Device\UploadUser.aspx.cs">
+      <DependentUpon>UploadUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMS\CompanyContactMaster.aspx.cs">
+      <DependentUpon>CompanyContactMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMS\ContactMaster.aspx.cs">
+      <DependentUpon>ContactMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMS\GroupMaster.aspx.cs">
+      <DependentUpon>GroupMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ERPLogin.aspx.cs">
+      <DependentUpon>ERPLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ERPMaster.master.cs">
+      <DependentUpon>ERPMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\AllowanceMaster.aspx.cs">
+      <DependentUpon>AllowanceMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\DeductionMaster.aspx.cs">
+      <DependentUpon>DeductionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EditPayrollMonth.aspx.cs">
+      <DependentUpon>EditPayrollMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmpAllowanceDeduction.aspx.cs">
+      <DependentUpon>EmpAllowanceDeduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmployeeClaimRequest.aspx.cs">
+      <DependentUpon>EmployeeClaimRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmployeeDirectory.aspx.cs">
+      <DependentUpon>EmployeeDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\EmployeeLoanRequest.aspx.cs">
+      <DependentUpon>EmployeeLoanRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\GenerateEmpPayroll.aspx.cs">
+      <DependentUpon>GenerateEmpPayroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\GeneratePayrollReport.aspx.cs">
+      <DependentUpon>GeneratePayrollReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\PayEmployeeClaim.aspx.cs">
+      <DependentUpon>PayEmployeeClaim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\PayEmployeePenalty.aspx.cs">
+      <DependentUpon>PayEmployeePenalty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\Pay_Employee_Loan.aspx.cs">
+      <DependentUpon>Pay_Employee_Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\Pay_Employee_LoanDetail.aspx.cs">
+      <DependentUpon>Pay_Employee_LoanDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\ClaimReport.aspx.cs">
+      <DependentUpon>ClaimReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\DirectoryMasterReport.aspx.cs">
+      <DependentUpon>DirectoryMasterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\DirectoryReport.aspx.cs">
+      <DependentUpon>DirectoryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\EmpDirectoryReport.aspx.cs">
+      <DependentUpon>EmpDirectoryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_Allowance_Report.aspx.cs">
+      <DependentUpon>Employee_Allowance_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_Attendence_Salary_Report.aspx.cs">
+      <DependentUpon>Employee_Attendence_Salary_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_ByAllowance_Report.aspx.cs">
+      <DependentUpon>Employee_ByAllowance_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_DeductionByDeduction.aspx.cs">
+      <DependentUpon>Employee_DeductionByDeduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_Deduction_Report.aspx.cs">
+      <DependentUpon>Employee_Deduction_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_DuePayement.aspx.cs">
+      <DependentUpon>Employee_DuePayement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_PaySlip_Report.aspx.cs">
+      <DependentUpon>Employee_PaySlip_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_PF_Report.aspx.cs">
+      <DependentUpon>Employee_PF_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Employee_TotalSalary_Report.aspx.cs">
+      <DependentUpon>Employee_TotalSalary_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\GenerateReportTemp.aspx.cs">
+      <DependentUpon>GenerateReportTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\LoanDetailReport.aspx.cs">
+      <DependentUpon>LoanDetailReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\LoanReport.aspx.cs">
+      <DependentUpon>LoanReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\PenaltyReport.aspx.cs">
+      <DependentUpon>PenaltyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Report\Settlement_payment.aspx.cs">
+      <DependentUpon>Settlement_payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\BillOfMaterial.aspx.cs">
+      <DependentUpon>BillOfMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Inv_ExpensesMaster.aspx.cs">
+      <DependentUpon>Inv_ExpensesMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\ItemMaster.aspx.cs">
+      <DependentUpon>ItemMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\OptionCategoryMaster.aspx.cs">
+      <DependentUpon>OptionCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductBrandMaster.aspx.cs">
+      <DependentUpon>ProductBrandMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductBuilder.aspx.cs">
+      <DependentUpon>ProductBuilder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductCategoryMaster.aspx.cs">
+      <DependentUpon>ProductCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\RackMaster.aspx.cs">
+      <DependentUpon>RackMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\Transfer.aspx.cs">
+      <DependentUpon>Transfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\TransferIn.aspx.cs">
+      <DependentUpon>TransferIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\TransferRequest.aspx.cs">
+      <DependentUpon>TransferRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\UnitMaster.aspx.cs">
+      <DependentUpon>UnitMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\AddressCategory.aspx.cs">
+      <DependentUpon>AddressCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\BankMaster.aspx.cs">
+      <DependentUpon>BankMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\BrandMaster.aspx.cs">
+      <DependentUpon>BrandMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\CompanyMaster.aspx.cs">
+      <DependentUpon>CompanyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\CompanyParameter.aspx.cs">
+      <DependentUpon>CompanyParameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\CustomerMaster.aspx.cs">
+      <DependentUpon>CustomerMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\DepartmentMaster.aspx.cs">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\DesignationMaster.aspx.cs">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\EmployeeGroupMaster.aspx.cs">
+      <DependentUpon>EmployeeGroupMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\EmployeeMaster.aspx.cs">
+      <DependentUpon>EmployeeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\HolidayMaster.aspx.cs">
+      <DependentUpon>HolidayMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterSetUp\LeaveTypeMaster.aspx.cs">
+      <DependentUpon>LeaveTypeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\LocationMaster.aspx.cs">
+      <DependentUpon>LocationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\NationalityMaster.aspx.cs">
+      <DependentUpon>NationalityMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\PaymentModeMaster.aspx.cs">
+      <DependentUpon>PaymentModeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\QualificationMaster.aspx.cs">
+      <DependentUpon>QualificationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\ReligionMaster.aspx.cs">
+      <DependentUpon>ReligionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\RoleMaster.aspx.cs">
+      <DependentUpon>RoleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSetUp\SupplierMaster.aspx.cs">
+      <DependentUpon>SupplierMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterSetUp\UserMaster.aspx.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagement\ProjectMaster.aspx.cs">
+      <DependentUpon>ProjectMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManagement\ProjectTask.aspx.cs">
+      <DependentUpon>ProjectTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManagement\ProjectTeam.aspx.cs">
+      <DependentUpon>ProjectTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\CompareQuatation.aspx.cs">
+      <DependentUpon>CompareQuatation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseGoodsRec.aspx.cs">
+      <DependentUpon>PurchaseGoodsRec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseInquiry.aspx.cs">
+      <DependentUpon>PurchaseInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseInvoice.aspx.cs">
+      <DependentUpon>PurchaseInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrder.aspx.cs">
+      <DependentUpon>PurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuatation.aspx.cs">
+      <DependentUpon>PurchaseQuatation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequest.aspx.cs">
+      <DependentUpon>PurchaseRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequestApproval.aspx.cs">
+      <DependentUpon>PurchaseRequestApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequestPrint.aspx.cs">
+      <DependentUpon>PurchaseRequestPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseReturn.aspx.cs">
+      <DependentUpon>PurchaseReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesInquiry.aspx.cs">
+      <DependentUpon>SalesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesInvoice.aspx.cs">
+      <DependentUpon>SalesInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesOrder.aspx.cs">
+      <DependentUpon>SalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesQuotation.aspx.cs">
+      <DependentUpon>SalesQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesReturn.aspx.cs">
+      <DependentUpon>SalesReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetUp\AddressMaster.aspx.cs">
+      <DependentUpon>AddressMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetUp\CertificateMaster.aspx.cs">
+      <DependentUpon>CertificateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\ConcessionMaster.aspx.cs">
+      <DependentUpon>ConcessionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\GrampacyatMaster.aspx.cs">
+      <DependentUpon>GrampacyatMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\PostMaster.aspx.cs">
+      <DependentUpon>PostMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\VillageMaster.aspx.cs">
+      <DependentUpon>VillageMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\DistrictMaster.aspx.cs">
+      <DependentUpon>DistrictMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\CityMaster.aspx.cs">
+      <DependentUpon>CityMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\StateMaster.aspx.cs">
+      <DependentUpon>StateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\ExaminationMaster.aspx.cs">
+      <DependentUpon>ExaminationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\UnivercityMaster.aspx.cs">
+      <DependentUpon>UnivercityMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\StudentTypeMaster.aspx.cs">
+      <DependentUpon>StudentTypeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\GeneralMaster.aspx.cs">
+      <DependentUpon>GeneralMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\CountryMaster.aspx.cs">
+      <DependentUpon>CountryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\CurrencyMaster.aspx.cs">
+      <DependentUpon>CurrencyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetUp\DocumentNumber.aspx.cs">
+      <DependentUpon>DocumentNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Temp\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\Attendance_Report\AttendanceDataSet.xsc">
+      <DependentUpon>AttendanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\Attendance_Report\AttendanceDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\Attendance_Report\AttendanceDataSet.xss">
+      <DependentUpon>AttendanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Allowance_ByAllowance_DataSet.xsc">
+      <DependentUpon>Allowance_ByAllowance_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Allowance_ByAllowance_DataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\Allowance_ByAllowance_DataSet.xss">
+      <DependentUpon>Allowance_ByAllowance_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Deduction_By_DeductionDataSet.xsc">
+      <DependentUpon>Deduction_By_DeductionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Deduction_By_DeductionDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\Deduction_By_DeductionDataSet.xss">
+      <DependentUpon>Deduction_By_DeductionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeClaimApproved.xsc">
+      <DependentUpon>EmployeeClaimApproved.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeClaimApproved.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeClaimApproved.xss">
+      <DependentUpon>EmployeeClaimApproved.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeDirectoryDataSet.xsc">
+      <DependentUpon>EmployeeDirectoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeDirectoryDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeDirectoryDataSet.xss">
+      <DependentUpon>EmployeeDirectoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeLoanDataset.xsc">
+      <DependentUpon>EmployeeLoanDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeLoanDataset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeeLoanDataset.xss">
+      <DependentUpon>EmployeeLoanDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeePaySlipDataSet.xsc">
+      <DependentUpon>EmployeePaySlipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeePaySlipDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeePaySlipDataSet.xss">
+      <DependentUpon>EmployeePaySlipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeePenaltyDataset.xsc">
+      <DependentUpon>EmployeePenaltyDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeePenaltyDataset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\EmployeePenaltyDataset.xss">
+      <DependentUpon>EmployeePenaltyDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Employee_Allowance_DataSet.xsc">
+      <DependentUpon>Employee_Allowance_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Employee_Allowance_DataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\Employee_Allowance_DataSet.xss">
+      <DependentUpon>Employee_Allowance_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Employee_Deduction_DataSet.xsc">
+      <DependentUpon>Employee_Deduction_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Employee_Deduction_DataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\Employee_Deduction_DataSet.xss">
+      <DependentUpon>Employee_Deduction_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Emp_DuePaymentDataset.xsc">
+      <DependentUpon>Emp_DuePaymentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Emp_DuePaymentDataset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\Emp_DuePaymentDataset.xss">
+      <DependentUpon>Emp_DuePaymentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EpmloyeePF_DataSet.xsc">
+      <DependentUpon>EpmloyeePF_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\EpmloyeePF_DataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\EpmloyeePF_DataSet.xss">
+      <DependentUpon>EpmloyeePF_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\LoanDetailDataset.xsc">
+      <DependentUpon>LoanDetailDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\LoanDetailDataset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\LoanDetailDataset.xss">
+      <DependentUpon>LoanDetailDataset.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Settlement_Payment_DataSet.xsc">
+      <DependentUpon>Settlement_Payment_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\HR_Report\Settlement_Payment_DataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Code\HR_Report\Settlement_Payment_DataSet.xss">
+      <DependentUpon>Settlement_Payment_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\Pegasus_ERP.bak" />
+    <None Include="App_WebReferences\net\webservicex\www\CurrencyConvertor.discomap" />
+    <None Include="App_WebReferences\net\webservicex\www\CurrencyConvertor.wsdl" />
+    <None Include="bin\AjaxControlToolkit.dll.refresh" />
+    <None Include="bin\aspNetEmail.xml.lic" />
+    <None Include="bin\aspNetMime.xml.lic" />
+    <None Include="bin\Bin2\AjaxControlToolkit.dll.refresh" />
+    <None Include="bin\Device_SDK.dll.refresh" />
+    <None Include="bin\ExportPanel.dll.refresh" />
+    <None Include="bin\itextsharp.dll.refresh" />
+    <None Include="bin\PegasusDataAccess.dll.refresh" />
+    <None Include="CompanyResource\1\EmpWithAllField.xls" />
+    <None Include="CompanyResource\1\EmpWithAllField.xlsx" />
+    <None Include="CompanyResource\1\EmpWithNesField.xls" />
+    <None Include="CompanyResource\EmpWithAllField.xlsx" />
+    <None Include="CompanyResource\EmpWithNesField.xls" />
+    <Content Include="ERPMaster.master" />
+    <Content Include="Handler.ashx" />
+    <None Include="Login\css\.DS_Store" />
+    <None Include="Login\font\fontawesome-webfont.eot" />
+    <None Include="Login\font\fontawesome-webfont.ttf" />
+    <None Include="Login\font\fontawesome-webfont.woff" />
+    <None Include="Login\images\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_Code\HR_Report\Allowance_Report.resx">
+      <DependentUpon>Allowance_Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_Code\HR_Report\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Academic\AcademicFormsMasters.aspx" />
+    <Content Include="Academic\AcademicMaster.aspx" />
+    <Content Include="Academic\AcademicReportsMaster.aspx" />
+    <Content Include="Academic\AdmissionMaster.aspx" />
+    <Content Include="Academic\ClassMaster.aspx" />
+    <Content Include="Academic\CourseMaster.aspx" />
+    <Content Include="Academic\FeesHeadMaster.aspx" />
+    <Content Include="Academic\Masters.aspx" />
+    <Content Include="Academic\StudentEnquiry.aspx" />
+    <Content Include="App_GlobalResources\Allowance_Report.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Allowance_Report1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ArabicMessage.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ArabicMessage1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Attendance.ar-SA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Attendance.ar-SA1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Attendance.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Attendance.en-US1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Attendance.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Attendance1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_AbsentReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_AbsentReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_AttendanceSalaryReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_AttendanceSalaryReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_DailySalaryReport1.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_DailySalaryReport11.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_EarlyOutReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_EarlyOutReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_EmployeeReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_EmployeeReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_ExceptionReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_ExceptionReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_HolidayReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_HolidayReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_InOutReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_InOutReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_LateReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_LateReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_LeaveRemainingReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_LeaveRemainingReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_LeaveReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_LeaveReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_LeaveStatusReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_LeaveStatusReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_LogReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_LogReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_OverTimeReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_OverTimeReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_PartialLeaveReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_PartialLeaveReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_PartialViolationReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_PartialViolationReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_ShiftReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_ShiftReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_SummaryReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_SummaryReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Att_WeekOffReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Att_WeekOffReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\DeductionByDeduction.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DeductionByDeduction1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Deduction_Report.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Deduction_Report1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\DirectoryWiseReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DirectoryWiseReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\DocumentReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DocumentReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeeClaimreport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeeClaimreport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeeDirectoryReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeeDirectoryReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeeLoanDetailReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeeLoanDetailReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeeLoanInstallmentReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeeLoanInstallmentReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeeLoanReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeeLoanReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeePenaltyReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeePenaltyReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\EmployeePFReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmployeePFReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Employee_Attendance_Report.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Employee_Attendance_Report1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Employee_Pay_Slip_Report.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Employee_Pay_Slip_Report1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Employee_Total_Sal_Report.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Employee_Total_Sal_Report1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Employe_AllowanceByAllowance.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Employe_AllowanceByAllowance1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\MailTransactionReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>MailTransactionReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Pay_Employee_DuePayement.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Pay_Employee_DuePayement1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\UserTransferReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserTransferReport1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\XtraReport1.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>XtraReport11.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\App_Licenses.dll" />
+    <Content Include="bin\AxInterop.zkemkeeper.dll" />
+    <Content Include="bin\Bin2\AjaxControlToolkit.dll" />
+    <Content Include="bin\Bin2\AjaxControlToolkit.pdb" />
+    <Content Include="bin\Bin2\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Bin2\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\DevExpress.Charts.v10.2.Core.dll" />
+    <Content Include="bin\DevExpress.Data.v10.2.dll" />
+    <Content Include="bin\DevExpress.PivotGrid.v10.2.Core.dll" />
+    <Content Include="bin\DevExpress.RichEdit.v10.2.Core.dll" />
+    <Content Include="bin\DevExpress.Utils.v10.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxEditors.v10.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxGridView.v10.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxGridView.v10.2.Export.dll" />
+    <Content Include="bin\DevExpress.Web.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraBars.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v10.2.Web.dll" />
+    <Content Include="bin\DevExpress.XtraEditors.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraNavBar.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraPivotGrid.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraPrinting.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v10.2.Web.dll" />
+    <Content Include="bin\DevExpress.XtraRichEdit.v10.2.dll" />
+    <Content Include="bin\DevExpress.XtraTreeList.v10.2.dll" />
+    <Content Include="bin\Device_SDK.dll" />
+    <Content Include="bin\ExportPanel.dll" />
+    <Content Include="bin\Interop.zkemkeeper.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\PegasusDataAccess.dll" />
+    <Content Include="bin\PegasusDeviceOperation.dll" />
+    <Content Include="CompanyResource\11\Lighthouse.jpg" />
+    <Content Include="CompanyResource\11\PegasusLogo.jpg" />
+    <Content Include="CompanyResource\11\Penguins.jpg" />
+    <Content Include="CompanyResource\11\Tulips.jpg" />
+    <Content Include="CompanyResource\14\Hydrangeas.jpg" />
+    <Content Include="CompanyResource\14\Lighthouse.jpg" />
+    <Content Include="CompanyResource\16\Lighthouse.jpg" />
+    <Content Include="CompanyResource\16\PegasusLogo.jpg" />
+    <Content Include="CompanyResource\17\Chrysanthemum.jpg" />
+    <Content Include="CompanyResource\17\Hydrangeas.jpg" />
+    <Content Include="CompanyResource\17\Jellyfish.jpg" />
+    <Content Include="CompanyResource\17\Tulips.jpg" />
+    <Content Include="CompanyResource\18\Hydrangeas.jpg" />
+    <Content Include="CompanyResource\1\Chrysanthemum.jpg" />
+    <Content Include="CompanyResource\1\Desert.jpg" />
+    <Content Include="CompanyResource\1\Hydrangeas.jpg" />
+    <Content Include="CompanyResource\1\InvGridHdr.jpg" />
+    <Content Include="CompanyResource\1\Jellyfish.jpg" />
+    <Content Include="CompanyResource\1\Koala.jpg" />
+    <Content Include="CompanyResource\1\Lighthouse.jpg" />
+    <Content Include="CompanyResource\1\PegasusLogo.jpg" />
+    <Content Include="CompanyResource\1\Penguins.jpg" />
+    <Content Include="CompanyResource\1\Tulips.jpg" />
+    <Content Include="CompanyResource\2\PegasusLogo.jpg" />
+    <Content Include="CompanyResource\3\Desert.jpg" />
+    <Content Include="CompanyResource\3\Hydrangeas.jpg" />
+    <Content Include="CompanyResource\3\Lighthouse.jpg" />
+    <Content Include="CompanyResource\3\Penguins.jpg" />
+    <Content Include="CompanyResource\3\Tulips.jpg" />
+    <Content Include="CompanyResource\4\a2.png" />
+    <Content Include="CompanyResource\5\Chrysanthemum.jpg" />
+    <Content Include="CompanyResource\5\Hydrangeas.jpg" />
+    <Content Include="CompanyResource\5\Lighthouse.jpg" />
+    <Content Include="CompanyResource\6\Lighthouse.jpg" />
+    <Content Include="CompanyResource\8\Chrysanthemum.jpg" />
+    <Content Include="CompanyResource\8\Lighthouse.jpg" />
+    <Content Include="CompanyResource\8\PegasusLogo.jpg" />
+    <Content Include="CompanyResource\8\Tulips.jpg" />
+    <Content Include="CompanyResource\9\PegasusLogo.jpg" />
+    <Content Include="CSS\AJAX.css" />
+    <Content Include="CSS\InvStyle.css" />
+    <Content Include="Device\DeleteUser.aspx" />
+    <Content Include="Device\DeviceMaster.aspx" />
+    <Content Include="Device\DeviceOperation.aspx" />
+    <Content Include="Device\DeviceParameter.aspx" />
+    <Content Include="Device\DownloadLog.aspx" />
+    <Content Include="Device\DownloadUser.aspx" />
+    <Content Include="Device\UploadUser.aspx" />
+    <Content Include="EMS\CompanyContactMaster.aspx" />
+    <Content Include="EMS\ContactMaster.aspx" />
+    <Content Include="EMS\GroupMaster.aspx" />
+    <Content Include="ERPLogin.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="HR\AllowanceMaster.aspx" />
+    <Content Include="HR\DeductionMaster.aspx" />
+    <Content Include="HR\EditPayrollMonth.aspx" />
+    <Content Include="HR\EmpAllowanceDeduction.aspx" />
+    <Content Include="HR\EmployeeClaimRequest.aspx" />
+    <Content Include="HR\EmployeeDirectory.aspx" />
+    <Content Include="HR\EmployeeLoanRequest.aspx" />
+    <Content Include="HR\GenerateEmpPayroll.aspx" />
+    <Content Include="HR\GeneratePayrollReport.aspx" />
+    <Content Include="HR\PayEmployeeClaim.aspx" />
+    <Content Include="HR\PayEmployeePenalty.aspx" />
+    <Content Include="HR\Pay_Employee_Loan.aspx" />
+    <Content Include="HR\Pay_Employee_LoanDetail.aspx" />
+    <Content Include="HR_Report\ClaimReport.aspx" />
+    <Content Include="HR_Report\DirectoryMasterReport.aspx" />
+    <Content Include="HR_Report\DirectoryReport.aspx" />
+    <Content Include="HR_Report\EmpDirectoryReport.aspx" />
+    <Content Include="HR_Report\Employee_Allowance_Report.aspx" />
+    <Content Include="HR_Report\Employee_Attendence_Salary_Report.aspx" />
+    <Content Include="HR_Report\Employee_ByAllowance_Report.aspx" />
+    <Content Include="HR_Report\Employee_DeductionByDeduction.aspx" />
+    <Content Include="HR_Report\Employee_Deduction_Report.aspx" />
+    <Content Include="HR_Report\Employee_DuePayement.aspx" />
+    <Content Include="HR_Report\Employee_PaySlip_Report.aspx" />
+    <Content Include="HR_Report\Employee_PF_Report.aspx" />
+    <Content Include="HR_Report\Employee_TotalSalary_Report.aspx" />
+    <Content Include="HR_Report\GenerateReportTemp.aspx" />
+    <Content Include="HR_Report\LoanDetailReport.aspx" />
+    <Content Include="HR_Report\LoanReport.aspx" />
+    <Content Include="HR_Report\PenaltyReport.aspx" />
+    <Content Include="HR_Report\Settlement_payment.aspx" />
+    <Content Include="Images\1378914096_preferences-system-login.png" />
+    <Content Include="Images\a1.png" />
+    <Content Include="Images\a2.png" />
+    <Content Include="Images\active.png" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\add_address.png" />
+    <Content Include="Images\add_address_hvr.png" />
+    <Content Include="Images\ajax-loader2.gif" />
+    <Content Include="Images\alert.png" />
+    <Content Include="Images\Allow.png" />
+    <Content Include="Images\approve.png" />
+    <Content Include="Images\Attendance-Report.jpg" />
+    <Content Include="Images\Attendance.jpg" />
+    <Content Include="Images\bgs.png" />
+    <Content Include="Images\bg_repeat.jpg" />
+    <Content Include="Images\Bin.png" />
+    <Content Include="Images\btnLocation.png" />
+    <Content Include="Images\btnLocationBlue.png" />
+    <Content Include="Images\change-company.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\compare.jpg" />
+    <Content Include="Images\compare.png" />
+    <Content Include="Images\connect.png" />
+    <Content Include="Images\Detail.png" />
+    <Content Include="Images\Device-setup.jpg" />
+    <Content Include="Images\deviceopration.png" />
+    <Content Include="Images\disapprove.png" />
+    <Content Include="Images\dwdlog.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\Erase.png" />
+    <Content Include="Images\excel-icon.gif" />
+    <Content Include="Images\HR.jpg" />
+    <Content Include="Images\Icon-buttons-home.png" />
+    <Content Include="Images\Inventory.jpg" />
+    <Content Include="Images\InvGridHdr.jpg" />
+    <Content Include="Images\leave.png" />
+    <Content Include="Images\List.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="Images\mainbk.png" />
+    <Content Include="Images\Master.jpg" />
+    <Content Include="Images\Menubg.jpg" />
+    <Content Include="Images\New.png" />
+    <Content Include="Images\NewTree.png" />
+    <Content Include="Images\new_address.png" />
+    <Content Include="Images\new_address_hvr.png" />
+    <Content Include="Images\NotAllow.png" />
+    <Content Include="Images\otpl.png" />
+    <Content Include="Images\para.png" />
+    <Content Include="Images\parameter.png" />
+    <Content Include="Images\pdfIcon.jpg" />
+    <Content Include="Images\penalty.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\product_icon.png" />
+    <Content Include="Images\Pull.png" />
+    <Content Include="Images\PullAll.png" />
+    <Content Include="Images\PullAllBlue.png" />
+    <Content Include="Images\PullBlue.png" />
+    <Content Include="Images\purchase.jpg" />
+    <Content Include="Images\Push.png" />
+    <Content Include="Images\PushAll.png" />
+    <Content Include="Images\PushAllBlue.png" />
+    <Content Include="Images\PushBlue.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\Request.png" />
+    <Content Include="Images\salary.png" />
+    <Content Include="Images\sales.jpg" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\selectAll.png" />
+    <Content Include="Images\seperater.png" />
+    <Content Include="Images\showimage.jpg" />
+    <Content Include="Images\system_setup.jpg" />
+    <Content Include="Images\upload.png" />
+    <Content Include="Inventory\BillOfMaterial.aspx" />
+    <Content Include="Inventory\Inv_ExpensesMaster.aspx" />
+    <Content Include="Inventory\ItemMaster.aspx" />
+    <Content Include="Inventory\OptionCategoryMaster.aspx" />
+    <Content Include="Inventory\ProductBrandMaster.aspx" />
+    <Content Include="Inventory\ProductBuilder.aspx" />
+    <Content Include="Inventory\ProductCategoryMaster.aspx" />
+    <Content Include="Inventory\RackMaster.aspx" />
+    <Content Include="Inventory\Transfer.aspx" />
+    <Content Include="Inventory\TransferIn.aspx" />
+    <Content Include="Inventory\TransferRequest.aspx" />
+    <Content Include="Inventory\UnitMaster.aspx" />
+    <Content Include="Login\css\demo.css" />
+    <Content Include="Login\css\font-awesome.css" />
+    <Content Include="Login\css\style.css" />
+    <Content Include="Login\font\fontawesome-webfont.svg" />
+    <Content Include="Login\images\1366135037_gnome-keyring-manager.png" />
+    <Content Include="Login\images\Pegasus-Logo.png" />
+    <Content Include="Login\images\showimage.png" />
+    <Content Include="Login\images\user-login_icon.png" />
+    <Content Include="MasterSetUp\AddressCategory.aspx" />
+    <Content Include="MasterSetUp\BankMaster.aspx" />
+    <Content Include="MasterSetUp\BrandMaster.aspx" />
+    <Content Include="MasterSetUp\CompanyMaster.aspx" />
+    <Content Include="MasterSetUp\CompanyParameter.aspx" />
+    <Content Include="MasterSetUp\CustomerMaster.aspx" />
+    <Content Include="MasterSetUp\DepartmentMaster.aspx" />
+    <Content Include="MasterSetUp\DesignationMaster.aspx" />
+    <Content Include="MasterSetUp\EmployeeGroupMaster.aspx" />
+    <Content Include="MasterSetUp\EmployeeMaster.aspx" />
+    <Content Include="MasterSetUp\HolidayMaster.aspx" />
+    <Content Include="MasterSetUp\Home.aspx" />
+    <Content Include="MasterSetUp\LeaveTypeMaster.aspx" />
+    <Content Include="MasterSetUp\LocationMaster.aspx" />
+    <Content Include="MasterSetUp\NationalityMaster.aspx" />
+    <Content Include="MasterSetUp\PaymentModeMaster.aspx" />
+    <Content Include="MasterSetUp\QualificationMaster.aspx" />
+    <Content Include="MasterSetUp\ReligionMaster.aspx" />
+    <Content Include="MasterSetUp\RoleMaster.aspx" />
+    <Content Include="MasterSetUp\SupplierMaster.aspx" />
+    <Content Include="MasterSetUp\UserMaster.aspx" />
+    <Content Include="obj\Debug\Pegasus ERP Solution.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\App_Code.Attendance_Report.AttendanceDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.Allowance_ByAllowance_DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.Deduction_By_DeductionDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.EmployeeClaimApproved.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.EmployeeDirectoryDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.EmployeeLoanDataset.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.EmployeePaySlipDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.EmployeePenaltyDataset.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.Employee_Allowance_DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.Employee_Deduction_DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.Emp_DuePaymentDataset.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.EpmloyeePF_DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.LoanDetailDataset.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_Code.HR_Report.Settlement_Payment_DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Allowance_Report.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Allowance_Report1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.ArabicMessage.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.ArabicMessage1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Attendance.ar-SA.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Attendance.ar-SA1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Attendance.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Attendance.en-US.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Attendance.en-US1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Attendance1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_AbsentReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_AbsentReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_AttendanceSalaryReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_AttendanceSalaryReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_DailySalaryReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_DailySalaryReport11.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_EarlyOutReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_EarlyOutReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_EmployeeReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_EmployeeReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_ExceptionReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_ExceptionReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_HolidayReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_HolidayReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_InOutReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_InOutReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LateReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LateReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LeaveRemainingReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LeaveRemainingReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LeaveReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LeaveReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LeaveStatusReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LeaveStatusReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LogReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_LogReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_OverTimeReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_OverTimeReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_PartialLeaveReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_PartialLeaveReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_PartialViolationReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_PartialViolationReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_ShiftReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_ShiftReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_SummaryReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_SummaryReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_WeekOffReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Att_WeekOffReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.DeductionByDeduction.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.DeductionByDeduction1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Deduction_Report.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Deduction_Report1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.DirectoryWiseReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.DirectoryWiseReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.DocumentReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.DocumentReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeClaimreport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeClaimreport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeDirectoryReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeDirectoryReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeLoanDetailReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeLoanDetailReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeLoanInstallmentReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeLoanInstallmentReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeLoanReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeeLoanReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeePenaltyReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeePenaltyReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeePFReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.EmployeePFReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employee_Attendance_Report.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employee_Attendance_Report1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employee_Pay_Slip_Report.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employee_Pay_Slip_Report1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employee_Total_Sal_Report.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employee_Total_Sal_Report1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employe_AllowanceByAllowance.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Employe_AllowanceByAllowance1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.MailTransactionReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.MailTransactionReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Pay_Employee_DuePayement.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Pay_Employee_DuePayement1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.UserTransferReport.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.UserTransferReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.XtraReport1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.XtraReport11.designer.cs.dll" />
+    <Content Include="ProjectManagement\ProjectMaster.aspx" />
+    <Content Include="ProjectManagement\ProjectTask.aspx" />
+    <Content Include="ProjectManagement\ProjectTeam.aspx" />
+    <Content Include="Purchase\CompareQuatation.aspx" />
+    <Content Include="Purchase\PurchaseGoodsRec.aspx" />
+    <Content Include="Purchase\PurchaseInquiry.aspx" />
+    <Content Include="Purchase\PurchaseInvoice.aspx" />
+    <Content Include="Purchase\PurchaseOrder.aspx" />
+    <Content Include="Purchase\PurchaseQuatation.aspx" />
+    <Content Include="Purchase\PurchaseRequest.aspx" />
+    <Content Include="Purchase\PurchaseRequestApproval.aspx" />
+    <Content Include="Purchase\PurchaseRequestPrint.aspx" />
+    <Content Include="Purchase\PurchaseReturn.aspx" />
+    <Content Include="Sales\SalesInquiry.aspx" />
+    <Content Include="Sales\SalesInvoice.aspx" />
+    <Content Include="Sales\SalesOrder.aspx" />
+    <Content Include="Sales\SalesQuotation.aspx" />
+    <Content Include="Sales\SalesReturn.aspx" />
+    <Content Include="SystemSetUp\AddressMaster.aspx" />
+    <Content Include="SystemSetUp\CertificateMaster.aspx" />
+    <Content Include="SystemSetUp\ConcessionMaster.aspx" />
+    <Content Include="SystemSetUp\GrampacyatMaster.aspx" />
+    <Content Include="SystemSetUp\PostMaster.aspx" />
+    <Content Include="SystemSetUp\VillageMaster.aspx" />
+    <Content Include="SystemSetUp\DistrictMaster.aspx" />
+    <Content Include="SystemSetUp\CityMaster.aspx" />
+    <Content Include="SystemSetUp\StateMaster.aspx" />
+    <Content Include="SystemSetUp\ExaminationMaster.aspx" />
+    <Content Include="SystemSetUp\UnivercityMaster.aspx" />
+    <Content Include="SystemSetUp\StudentTypeMaster.aspx" />
+    <Content Include="SystemSetUp\GeneralMaster.aspx" />
+    <Content Include="SystemSetUp\CountryMaster.aspx" />
+    <Content Include="SystemSetUp\CurrencyMaster.aspx" />
+    <Content Include="SystemSetUp\DocumentNumber.aspx" />
+    <Content Include="Temp\17inch.jpg" />
+    <Content Include="Temp\Default.aspx" />
+    <Content Include="Temp\images %281%29.jpg" />
+    <Content Include="Temp\images.jpg" />
+    <Content Include="Temp\Magnetic-Card-Reader-Track-1-2-3.jpg" />
+    <Content Include="Temp\Magnetic-Stripe-Card-1-2-.jpg" />
+    <Content Include="Temp\Mobile_250x250.jpg" />
+    <Content Include="Temp\msr.jpg" />
+    <Content Include="Temp\OMB-DAQ-3000_m.jpg" />
+    <Content Include="Temp\powerpos.jpg" />
+    <Content Include="Temp\ppt-3000.jpg" />
+    <Content Include="Temp\rugged.jpg" />
+    <Content Include="test.aspx" />
+    <EmbeddedResource Include="bin\licenses.licx" />
+    <EmbeddedResource Include="licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArcaWing\New Directory\" />
+    <Folder Include="ArcaWing\vcbcvb\" />
+    <Folder Include="ITSetUp\" />
+    <Folder Include="JS\" />
+    <Folder Include="LangaugeSupport\" />
+    <Folder Include="PayRoll\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38470</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

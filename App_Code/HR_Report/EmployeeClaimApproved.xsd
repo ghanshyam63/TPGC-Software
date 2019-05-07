@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmployeeClaimApproved" targetNamespace="http://tempuri.org/EmployeeClaimApproved.xsd" xmlns:mstns="http://tempuri.org/EmployeeClaimApproved.xsd" xmlns="http://tempuri.org/EmployeeClaimApproved.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmployeeClaimApproved" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EmployeeClaimApproved" msprop:Generator_DataSetName="EmployeeClaimApproved">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EmployeeClaim" msprop:Generator_UserTableName="EmployeeClaim" msprop:Generator_RowDeletedName="EmployeeClaimRowDeleted" msprop:Generator_RowChangedName="EmployeeClaimRowChanged" msprop:Generator_RowClassName="EmployeeClaimRow" msprop:Generator_RowChangingName="EmployeeClaimRowChanging" msprop:Generator_RowEvArgName="EmployeeClaimRowChangeEvent" msprop:Generator_RowEvHandlerName="EmployeeClaimRowChangeEventHandler" msprop:Generator_TableClassName="EmployeeClaimDataTable" msprop:Generator_TableVarName="tableEmployeeClaim" msprop:Generator_RowDeletingName="EmployeeClaimRowDeleting" msprop:Generator_TablePropName="EmployeeClaim">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company_Name" msprop:Generator_UserColumnName="Company_Name" msprop:Generator_ColumnPropNameInRow="Company_Name" msprop:Generator_ColumnVarNameInTable="columnCompany_Name" msprop:Generator_ColumnPropNameInTable="Company_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInTable="MonthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_UserColumnName="Year" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInTable="YearColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Id" msprop:Generator_UserColumnName="Emp_Id" msprop:Generator_ColumnPropNameInRow="Emp_Id" msprop:Generator_ColumnVarNameInTable="columnEmp_Id" msprop:Generator_ColumnPropNameInTable="Emp_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Name" msprop:Generator_UserColumnName="Emp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Claim_Name" msprop:Generator_UserColumnName="Claim_Name" msprop:Generator_ColumnPropNameInRow="Claim_Name" msprop:Generator_ColumnVarNameInTable="columnClaim_Name" msprop:Generator_ColumnPropNameInTable="Claim_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Claim_Amount" msprop:Generator_UserColumnName="Claim_Amount" msprop:Generator_ColumnPropNameInRow="Claim_Amount" msprop:Generator_ColumnVarNameInTable="columnClaim_Amount" msprop:Generator_ColumnPropNameInTable="Claim_AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sum_Claim" msprop:Generator_UserColumnName="Sum_Claim" msprop:Generator_ColumnVarNameInTable="columnSum_Claim" msprop:Generator_ColumnPropNameInRow="Sum_Claim" msprop:Generator_ColumnPropNameInTable="Sum_ClaimColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

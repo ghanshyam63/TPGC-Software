@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LoanDetailDataset" targetNamespace="http://tempuri.org/LoanDetailDataset.xsd" xmlns:mstns="http://tempuri.org/LoanDetailDataset.xsd" xmlns="http://tempuri.org/LoanDetailDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LoanDetailDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LoanDetailDataset" msprop:Generator_DataSetName="LoanDetailDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoanDetail" msprop:Generator_UserTableName="LoanDetail" msprop:Generator_RowDeletedName="LoanDetailRowDeleted" msprop:Generator_RowChangedName="LoanDetailRowChanged" msprop:Generator_RowClassName="LoanDetailRow" msprop:Generator_RowChangingName="LoanDetailRowChanging" msprop:Generator_RowEvArgName="LoanDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="LoanDetailRowChangeEventHandler" msprop:Generator_TableClassName="LoanDetailDataTable" msprop:Generator_TableVarName="tableLoanDetail" msprop:Generator_RowDeletingName="LoanDetailRowDeleting" msprop:Generator_TablePropName="LoanDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empid" msprop:Generator_UserColumnName="Empid" msprop:Generator_ColumnVarNameInTable="columnEmpid" msprop:Generator_ColumnPropNameInRow="Empid" msprop:Generator_ColumnPropNameInTable="EmpidColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_UserColumnName="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Loan_Name" msprop:Generator_UserColumnName="Loan_Name" msprop:Generator_ColumnVarNameInTable="columnLoan_Name" msprop:Generator_ColumnPropNameInRow="Loan_Name" msprop:Generator_ColumnPropNameInTable="Loan_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Installment" msprop:Generator_UserColumnName="Installment" msprop:Generator_ColumnVarNameInTable="columnInstallment" msprop:Generator_ColumnPropNameInRow="Installment" msprop:Generator_ColumnPropNameInTable="InstallmentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PaidAmount" msprop:Generator_UserColumnName="PaidAmount" msprop:Generator_ColumnVarNameInTable="columnPaidAmount" msprop:Generator_ColumnPropNameInRow="PaidAmount" msprop:Generator_ColumnPropNameInTable="PaidAmountColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnPropNameInTable="MonthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_UserColumnName="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Loan_Id" msprop:Generator_UserColumnName="Loan_Id" msprop:Generator_ColumnVarNameInTable="columnLoan_Id" msprop:Generator_ColumnPropNameInRow="Loan_Id" msprop:Generator_ColumnPropNameInTable="Loan_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Loan_Amount" msprop:Generator_UserColumnName="Loan_Amount" msprop:Generator_ColumnVarNameInTable="columnLoan_Amount" msprop:Generator_ColumnPropNameInRow="Loan_Amount" msprop:Generator_ColumnPropNameInTable="Loan_AmountColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Loan_Duration" msprop:Generator_UserColumnName="Loan_Duration" msprop:Generator_ColumnVarNameInTable="columnLoan_Duration" msprop:Generator_ColumnPropNameInRow="Loan_Duration" msprop:Generator_ColumnPropNameInTable="Loan_DurationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Loan_Interest" msprop:Generator_UserColumnName="Loan_Interest" msprop:Generator_ColumnVarNameInTable="columnLoan_Interest" msprop:Generator_ColumnPropNameInRow="Loan_Interest" msprop:Generator_ColumnPropNameInTable="Loan_InterestColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Gross_Amount" msprop:Generator_UserColumnName="Gross_Amount" msprop:Generator_ColumnVarNameInTable="columnGross_Amount" msprop:Generator_ColumnPropNameInRow="Gross_Amount" msprop:Generator_ColumnPropNameInTable="Gross_AmountColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sum_PaidAmount" msprop:Generator_UserColumnName="Sum_PaidAmount" msprop:Generator_ColumnPropNameInRow="Sum_PaidAmount" msprop:Generator_ColumnVarNameInTable="columnSum_PaidAmount" msprop:Generator_ColumnPropNameInTable="Sum_PaidAmountColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
